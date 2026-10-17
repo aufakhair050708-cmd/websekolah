@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Pendaftaran - SMA Harapan Bangsa | PPDB 2026/2027</title>
+  <meta name="description" content="Informasi lengkap alur pendaftaran, syarat dokumen, jadwal gelombang, dan rincian biaya PPDB SMA Harapan Bangsa Tahun Ajaran 2026/2027.">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================
+       1. NAVBAR (RESPONSIF DENGAN MOBILE MENU)
+       ======================================================== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Nama Sekolah -->
+        <a href="index.html" class="flex items-center gap-3 group" id="brand-logo">
+          <img src="image_b9dfcab.jpg" alt="Logo SMA Harapan Bangsa" class="w-11 h-11 rounded-full object-cover shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform duration-200">
+          <div>
+            <span class="text-xl font-extrabold text-slate-900 tracking-tight block">SMA Harapan Bangsa</span>
+            <span class="text-xs font-medium text-brand-600 tracking-wide uppercase">Cerdas, Berkarakter & Unggul</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-1" aria-label="Navigasi Utama">
+          <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-colors">
+            Beranda
+          </a>
+          <a href="info.html" class="px-4 py-2 rounded-lg text-sm font-semibold text-brand-600 bg-brand-50 border-b-2 border-brand-600 transition-colors" aria-current="page">
+            Info Pendaftaran
+          </a>
+          <a href="register.html" class="ml-4 inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-brand-700 hover:from-blue-700 hover:to-brand-800 shadow-md shadow-brand-600/25 hover:shadow-lg transition-all duration-200">
+            Daftar Sekarang
+            <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </nav>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg text-slate-600 hover:text-brand-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Buka menu navigasi" aria-expanded="false">
+            <svg id="hamburger-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-lg">
+      <a href="index.html" class="block px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">
+        Beranda
+      </a>
+      <a href="info.html" class="block px-4 py-2.5 rounded-lg text-base font-semibold text-brand-700 bg-brand-50">
+        Info Pendaftaran
+      </a>
+      <a href="register.html" class="block w-full text-center mt-3 px-4 py-3 rounded-xl text-base font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-md">
+        Daftar Sekarang
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       2. PAGE HEADER BANNER
+       ======================================================== -->
+  <main class="flex-grow">
+    <section class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 text-white py-14 lg:py-18 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          Informasi & Prosedur Pendaftaran
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-blue-100 max-w-2xl mx-auto">
+          Temukan panduan lengkap mengenai tahapan pendaftaran, berkas yang dibutuhkan, jadwal seleksi, dan estimasi biaya masuk sekolah.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+       3. ALUR PENDAFTARAN (LANGKAH 1 SAMPAI 3)
+       ======================================================== -->
+    <section class="py-16 sm:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Title -->
+        <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Alur Pendaftaran Siswa Baru
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Ikuti 3 tahapan mudah berikut untuk menjadi calon peserta didik di SMA Harapan Bangsa.
+          </p>
+        </div>
+
+        <!-- 3 Steps Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          
+          <!-- Step 1 -->
+          <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:border-brand-300 hover:shadow-lg transition-all duration-200">
+            <div class="mb-5">
+              <div class="w-12 h-12 rounded-xl bg-brand-600 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/30">
+                1
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">
+              Pengisian Formulir Online
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Calon siswa atau orang tua/wali mengisi data diri lengkap, kontak yang aktif, serta asal sekolah pada formulir pendaftaran daring.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200/80 flex items-center text-xs text-brand-600 font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Estimasi: 5-10 Menit
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:border-brand-300 hover:shadow-lg transition-all duration-200">
+            <div class="mb-5">
+              <div class="w-12 h-12 rounded-xl bg-brand-600 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/30">
+                2
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">
+              Verifikasi Berkas & Tes Minat
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Tim admisi memverifikasi dokumen persyaratan dan calon siswa mengikuti tes pemetaan bakat akademik serta wawancara peminatan jurusan.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200/80 flex items-center text-xs text-brand-600 font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Jadwal diumumkan via Email/WA
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:border-brand-300 hover:shadow-lg transition-all duration-200">
+            <div class="mb-5">
+              <div class="w-12 h-12 rounded-xl bg-brand-600 text-white font-extrabold text-xl flex items-center justify-center shadow-md shadow-brand-500/30">
+                3
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">
+              Pengumuman & Daftar Ulang
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Hasil seleksi diumumkan secara resmi. Siswa yang dinyatakan diterima melakukan proses daftar ulang dan pelunasan administrasi masuk.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200/80 flex items-center text-xs text-brand-600 font-semibold gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Resmi menjadi Siswa Baru!
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+       4. SYARAT DOKUMEN & JADWAL GELOMBANG / BIAYA
+       ======================================================== -->
+    <section class="py-16 sm:py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Bagian Kiri: Syarat Dokumen (5 Cols) -->
+          <div class="lg:col-span-5 bg-white rounded-2xl p-7 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+            <div class="flex items-center gap-3">
+              <div class="p-2.5 bg-blue-50 text-brand-600 rounded-xl">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-slate-900">Persyaratan Dokumen</h3>
+                <p class="text-xs text-slate-500">Disiapkan dalam bentuk fotokopi atau softcopy scan PDF</p>
+              </div>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-slate-700">
+              <li class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Fotokopi Kartu Keluarga (KK)</strong>
+                  <span class="text-xs text-slate-500">Sebanyak 2 lembar yang masih berlaku.</span>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Fotokopi Akta Kelahiran</strong>
+                  <span class="text-xs text-slate-500">Sebanyak 2 lembar legalisir / cap basah.</span>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Pas Foto Berwarna Ukuran 3x4</strong>
+                  <span class="text-xs text-slate-500">3 lembar latar belakang merah/biru berseragam sekolah asal.</span>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Ijazah / SKL / Rapor SMP</strong>
+                  <span class="text-xs text-slate-500">Fotokopi rapor semester 1 s.d 5 yang dilegalisir kepala sekolah.</span>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true"></span>
+                <div>
+                  <strong class="text-slate-900 block font-semibold">Sertifikat Prestasi (Opsional)</strong>
+                  <span class="text-xs text-slate-500">Khusus bagi pendaftar jalur prestasi akademik / non-akademik.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bagian Kanan: Jadwal Gelombang & Biaya (7 Cols) -->
+          <div class="lg:col-span-7 space-y-8">
+            
+            <!-- Jadwal Gelombang -->
+            <div class="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+              <div class="flex items-center gap-3">
+                <div class="p-2.5 bg-brand-50 text-brand-600 rounded-xl">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900">Jadwal Gelombang Pendaftaran</h3>
+                  <p class="text-xs text-slate-500">Pendaftaran ditutup sewaktu-waktu jika kuota terpenuhi</p>
+                </div>
+              </div>
+
+              <div class="space-y-3">
+                <!-- Gelombang 1 -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-brand-50 border border-brand-200 gap-2">
+                  <div>
+                    <h4 class="font-bold text-slate-900">Jalur Prestasi & Early Bird</h4>
+                    <p class="text-xs text-slate-600">Diskon 20% Biaya Gedung/Pengembangan</p>
+                  </div>
+                  <div class="text-left sm:text-right">
+                    <span class="text-sm font-bold text-brand-700 block">1 Jan – 28 Feb 2026</span>
+                    <span class="text-xs text-emerald-600 font-medium font-mono">Status: Dibuka</span>
+                  </div>
+                </div>
+
+                <!-- Gelombang 2 -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 gap-2">
+                  <div>
+                    <h4 class="font-bold text-slate-900">Jalur Reguler Umum</h4>
+                    <p class="text-xs text-slate-600">Pendaftaran reguler kuota utama</p>
+                  </div>
+                  <div class="text-left sm:text-right">
+                    <span class="text-sm font-bold text-slate-700 block">1 Mar – 30 Apr 2026</span>
+                    <span class="text-xs text-amber-600 font-medium font-mono">Status: Segera</span>
+                  </div>
+                </div>
+
+                <!-- Gelombang 3 -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 gap-2">
+                  <div>
+                    <h4 class="font-bold text-slate-900">Jalur Kuota Sisa</h4>
+                    <p class="text-xs text-slate-600">Hanya dibuka apabila masih tersedia kuota</p>
+                  </div>
+                  <div class="text-left sm:text-right">
+                    <span class="text-sm font-bold text-slate-700 block">1 Mei – 30 Jun 2026</span>
+                    <span class="text-xs text-slate-400 font-medium font-mono">Status: Menunggu</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rincian Biaya Pendaftaran -->
+            <div class="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="p-2.5 bg-brand-50 text-brand-600 rounded-xl">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900">Rincian Biaya Investasi Pendidikan</h3>
+                  <p class="text-xs text-slate-500">Transparan tanpa biaya tersembunyi</p>
+                </div>
+              </div>
+
+              <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left border-collapse">
+                  <thead>
+                    <tr class="border-b border-slate-200 text-xs font-semibold text-slate-500 uppercase">
+                      <th class="py-2.5">Komponen Biaya</th>
+                      <th class="py-2.5 text-right">Jumlah</th>
+                      <th class="py-2.5 pl-4 text-slate-400">Keterangan</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100 text-slate-700">
+                    <tr>
+                      <td class="py-2.5 font-medium">Formulir & Tes Seleksi</td>
+                      <td class="py-2.5 text-right font-semibold text-slate-900">Rp 250.000</td>
+                      <td class="py-2.5 pl-4 text-xs text-slate-500">1x saat mendaftar</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2.5 font-medium">Uang Seragam Lengkap (5 Stel)</td>
+                      <td class="py-2.5 text-right font-semibold text-slate-900">Rp 1.500.000</td>
+                      <td class="py-2.5 pl-4 text-xs text-slate-500">1x diawal masuk</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2.5 font-medium">SPP Bulanan (Termasuk Lab & Ekskul)</td>
+                      <td class="py-2.5 text-right font-semibold text-slate-900">Rp 750.000</td>
+                      <td class="py-2.5 pl-4 text-xs text-slate-500">Per bulan</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ========================================================
+             5. TOMBOL CTA BESAR BERWARNA KONTRAS
+             ======================================================== -->
+        <div class="mt-16 text-center">
+          <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">
+                Sudah Menyiapkan Dokumen Anda?
+              </h2>
+              <p class="text-blue-100 text-sm sm:text-base leading-relaxed">
+                Segera lengkapi formulir pendaftaran online untuk mengamankan kursi Anda di SMA Harapan Bangsa sebelum kuota terpenuhi.
+              </p>
+              <div>
+                <a href="register.html" id="cta-start-register" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-lg font-bold text-white bg-brand-600 hover:bg-brand-500 shadow-lg shadow-brand-500/30 hover:scale-105 active:scale-95 transition-all duration-200">
+                  <span>Mulai Mendaftar Sekarang</span>
+                  <svg class="w-6 h-6 ml-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       6. FOOTER KONSISTEN
+       ======================================================== -->
+  <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-slate-800">
+        
+        <div class="md:col-span-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="image_b9dfcab.jpg" alt="" class="w-9 h-9 rounded-full object-cover">
+            <span class="text-xl font-bold text-white tracking-tight">SMA Harapan Bangsa</span>
+          </div>
+          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            Jl. Pendidikan No. 45, Kompleks Edukasi Mandiri, Jakarta Selatan 12340.<br>
+            Telp: (021) 7890-1234 | Email: info@smaharapanbangsa.sch.id
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Navigasi Halaman</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-blue-400 transition-colors">Beranda</a></li>
+            <li><a href="info.html" class="hover:text-blue-400 transition-colors">Informasi Pendaftaran</a></li>
+            <li><a href="register.html" class="hover:text-blue-400 transition-colors">Formulir Pendaftaran</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-white">Ikuti Media Sosial</h4>
+          <p class="text-xs text-slate-400">Dapatkan update terkini mengenai kegiatan siswa dan informasi PPDB.</p>
+          <div class="flex items-center space-x-3 pt-2">
+            <!-- Instagram -->
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-pink-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors duration-200" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors duration-200" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.667 5H18V0h-3.889C10.5 0 9 1.582 9 4.615V8z"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-red-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors duration-200" aria-label="YouTube">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 text-center text-xs text-slate-500">
+        <p>&copy; 2026 SMA Harapan Bangsa. Hak Cipta Dilindungi Undang-Undang.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       7. VANILLA JAVASCRIPT: HAMBURGER MENU INTERACTION
+       ======================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+          menuBtn.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+          hamburgerIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
